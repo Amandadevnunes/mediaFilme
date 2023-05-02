@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flm.css">
 
-    
+
     <title>filmes</title>
 </head>
 
@@ -15,63 +16,68 @@
 
     <h1>Qual nota você acha que esse filme merece?</h1>
 
-    <h2>Filmes:</h2>
-<form id="formfilmes">
+    <h2>De uma nota de 0 a 10 para estes filmes:</h2>
 
 
-    <div class="f1">
-        <img src="./img/titanique.jpeg" alt="titanique">
-    
-            <p>De 0 a 10 qual nota esse filme Titanique merece?</p>
-            <input type="f1" id="nota">
-            <button type="submit" onclick="darNota()">Enviar</button>
 
-    </div>
-
-    <br><br>
-   
-   
-    <div class="f2">
-        <img src="./img/reiLeao.jpeg" alt="reiLeao">
-        
-            <p>De 0 a 10 qual nota esse filme Rei Leão merece?</p>
-            <input type="f2" id="nota">
-            <button  type="submit " onclick="darNota()">Enviar</button>
-
-    </div>
-
-    <br><br>
-   
-   
-    <div class="f3">
-        <img src="./img/branquelas.jpeg" alt="branquelas">
-        
-            <p>De 0 a 10 qual nota esse filme As Branquelas merece?</p>
-            <input type="f3" id="nota">
-            <button  type="submit" onclick="darNota()">Enviar</button>
-
-            <h1>ola</h1>
-
-    </div>
-
-    <br><br>
-   
-   
-    <div class="f4">
-        <img src="./img/primeiroAmor.jpeg" alt="primeiroAmor">
-        
-            <p>De 0 a 10 qual nota esse filme Meu Primeiro Amor merece?</p>
-            <input type="f4" id="nota">
-            <button  type="submit" onclick="darNota()">Enviar</button>
-
-    </div>
-</form>
-
-<button id="resultado" type="result">Resultado</button>
-
-<script src="filme.js" ></script>
+    <form id="formfilmes">
 
 
+        <div class="primeiroFilme">
+
+            <img src="./img/titanique.jpeg" alt="titanique">
+            <br><br>
+            <label for="filme1">Titanique:</label>
+            <input type="number" id="filme1" name="filme1" min="0" max="10" required>
+
+        </div>
+
+        <br><br>
+
+
+        <div class="segundoFilme">
+            <img src="./img/reiLeao.jpeg" alt="reiLeao">
+            <br><br>
+            <label for="filme2">O Rei Leão:</label>
+            <input type="number" id="filme2" name="filme2" min="0" max="10" required>
+
+
+        </div>
+
+        <br><br>
+
+
+        <div class="terceiroFilme">
+            <img src="./img/branquelas.jpeg" alt="branquelas">
+            <br><br>
+            <label for="filme3">As Branquelas:</label>
+            <input type="number" id="filme3" name="filme3" min="0" max="10" required>
+
+
+        </div>
+
+        <br><br>
+
+
+        <div class="quartoFilme">
+            <img src="./img/primeiroAmor.jpeg" alt="primeiroAmor">
+            <br><br>
+            <label for="filme4">Meu primiero Amor:</label>
+            <input type="number" id="filme4" name="filme4" min="0" max="10" required>
+
+<br><br><br>
+        </div>
+
+<br><br><br>
+        <div id="botao">
+            <input type="button" value="Enviar" onclick="enviarNotas()">
+        </div>
+
+    </form>
+
+
+
+    <script src="filme.js"></script>
 
 
 </body>

@@ -1,40 +1,35 @@
-const formfilme = document.getElementById("formfilme");
-//const valores = [number1, nunber2, nunber3, number4];
+function enviarNotas() {
+    const filme1 = parseFloat(document.querySelector('#filme1').value);
+    const filme2 = parseFloat(document.querySelector('#filme2').value);
+    const filme3 = parseFloat(document.querySelector('#filme3').value);
+    const filme4 = parseFloat(document.querySelector('#filme4').value);
 
-let filmes = ['f1', 'f2', 'f3', 'f4'];
-
-let nota = [[], [], [], []];
-
-
-function darNota() {
-
-    let filme = document.getElementById('filmes').value;
-    let nota = parseFloat(document.getElementById('nota').value);
+    const media = ((filme1 + filme2 + filme3 + filme4) / 4);
+    console.log("Média das notas é: " + parseFloat(media));
 
 
-    //const f1 = document.getElementById("nota").value;
-    //alert(nota=f1 + nota);
+    alert("Média das notas é: " + parseFloat(media));
 
-    //const f2 = document.getElementById("nota").value;
-   // alert(nota=f2 + nota);
-
-   // const f3 = document.getElementById("nota").value;
-   //alert(nota=f3  + nota);
-
-   // const f4 = document.getElementById("nota").value;
-   // alert(nota=f4 + nota);
-  
+};
 
 
-    if (nota >= 0 && nota <= 10) {
-        nota[filmes - 1].push(nota);
 
-        alert (filme == nota);
+/*let notaMaxima = 0;
 
 
-    //alert("o filme" + filmes[filmes - 1] + notas);
-
-    } else {
-       alert(" A nota deve estar entre 0 e 10");
-   }
-}
+if (filme1 == filme2 == filme3 == filme4) {
+    alert("Você deu a mesma nota para dois filmes");
+} 
+if (filme1 >= filme2 && filme1 >= filme3 && filme1 >= filme4) {
+   notaMaxima = filme1;
+    alert("O filme com a maior nota é Titanique com nota " + notaMaxima);
+} else if (filme2 >= filme3 && filme2 >= filme4) {
+    notaMaxima = filme2;
+    alert("O filme com a maior nota é O Rei Leão com nota " + notaMaxima);
+} else if (filme3 >= filme4) {
+    notaMaxima = filme3;
+    alert("O filme com a maior nota é As Branquelas com nota " + notaMaxima);
+} else {
+    notaMaxima = filme4;
+    alert("O filme com a maior nota é Meu primeiro Amor com nota " + notaMaxima);
+}*/

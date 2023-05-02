@@ -1,0 +1,36 @@
+
+body{
+    
+    background-color: #191970;
+}    
+
+#formfilmes{
+display: flex;
+flex-direction: row;
+align-items: stretch;
+justify-content: space-around;
+
+
+
+}
+
+img {
+width: 230px;
+height: 380px;
+margin-right: 10px;
+}
+
+#botao{
+display: flex;
+
+align-content: flex-end;
+justify-content: center;
+
+}
+
+
+label {
+font-size: 18px;
+color: aliceblue;
+
+}
